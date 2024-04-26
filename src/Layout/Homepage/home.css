@@ -1,0 +1,25 @@
+
+.container{
+    margin: 10px 0px 0px 10px;
+    height: 89vh;
+    display: flex; 
+    align-items: center;
+}
+
+.h_img{
+    width: 1000px;
+    height: 87vh;
+}
+
+.c2{
+
+    align-self: flex-start;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.dialuge
+{
+    font-size: 100px;
+    color: bisque;
+}
