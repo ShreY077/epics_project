@@ -8,7 +8,7 @@ function contact() {
 
   return (
     <>
-    <Navbar/>
+    {/* <Navbar/> */}
     <div className="contact" >
         <form action='#' className="contact_form">
             <div style={{display:'none'}}>

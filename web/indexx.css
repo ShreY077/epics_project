@@ -1,0 +1,130 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.barr {
+    background: rgb(72, 68, 68);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    padding: 15px 5px 15px 5px;
+    margin-left: 20px;
+}
+
+.Nav {
+    text-align: center;
+    display: flex;
+    font-size: 40px;
+    color: white;
+    justify-content: flex-end;
+}
+
+.Nav li {
+    list-style: none;
+    padding: 0px 0px 10px 0px;
+    margin-right: 50px;
+}
+
+.Nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.Nav a.active {
+    color: rgb(255, 238, 4); /* Active link color */
+}
+
+.sidenavv {
+    position: absolute  ;
+    left: 0;
+    top: calc(100vh-80px); /* Aligns to the top of the viewport */
+    width: 200px;
+    height: 100%; /* Fixed height for full viewport */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 20px; /* Padding around the sidenav */
+}
+
+.sidenav-logov {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.sidenav-linksv {
+    list-style: none;
+    padding: 0; /* No padding for list */
+}
+
+.sidenav-linksv li {
+    margin: 10px 0; /* Margin between list items */
+}
+
+.sidenav-linksv a {
+    text-decoration: none; /* No underline for links */
+    color: #fff; /* White text */
+    display: flex; /* Display as flex to align icon and text */
+    align-items: center; /* Align icon and text */
+}
+
+.sidenav-linksv a:hover {
+    color: #f39c12; /* Hover color */
+}
+
+.sidenav-linksv a i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+
+
+.layer{
+    /* background-color: bisque; */
+    
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 30px;
+    width: 800px;
+    height: 650px;
+}
+.layer1{
+    position: absolute;
+    margin-left:1050px;
+    margin-top: 30px;
+    width: 800px;
+    height: 650px;
+    
+}
+
+.pose-resultr{
+    position: absolute;
+    font-size: 40px;
+    color:white;
+    margin-left: 1650px;
+    margin-top: 13px;
+}
+
+.pose-resultl{
+    position: absolute;
+    font-size: 40px;
+    color:white;
+    margin-left: 1200px;
+
+}
+
+
+
+
+
+

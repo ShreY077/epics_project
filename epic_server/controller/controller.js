@@ -33,7 +33,7 @@ const login =(req,res)=>{
   req.session.user = user;
   req.session.isUser = true;
   console.log(req.session);
-  res.status(200).json({name:user.userName,email:user.email})
+  res.status(200).json({name:user,userId:req.session.passport.user,isUser : req.session.isUser})
 }
 
 

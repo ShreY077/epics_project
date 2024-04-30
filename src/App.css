@@ -9,9 +9,5 @@ body * {
 
 
 body{
-    background: #E55D87;
-    background: linear-gradient(
-      to right,
-      #E55D87,#5FC3E4
-    );
+  background-color: rgb(0, 0, 0);
 }

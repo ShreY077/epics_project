@@ -1,0 +1,42 @@
+.sidenavv {
+    position: fixed;
+    left: 0;
+    top: calc(100vh-80px);
+    width: 200px;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sidenav-logov {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .sidenav-linksv {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidenav-linksv li {
+    margin: 10px 0;
+  }
+  
+  .sidenav-linksv a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidenav-linksv a:hover {
+    color: #f39c12;
+  }
+  
+  .sidenav-linksv a svg {
+    margin-right: 10px;
+  }
+  

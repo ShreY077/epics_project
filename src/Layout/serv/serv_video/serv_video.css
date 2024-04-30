@@ -1,0 +1,71 @@
+.serv_video_container {
+  display: flex;
+  height: 100vh; 
+  background-color: #000; 
+}
+
+.sidenav {
+  position: absolute;
+  left: 0;
+  top: calc(100vh-80px);
+  width: 200px;
+  height: 100%; 
+  background-color: #000; 
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.sidenav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidenav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav-links li {
+  margin: 10px 0;
+}
+
+.sidenav-links a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.sidenav-links a:hover {
+  color: #f39c12; 
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 20px; 
+  margin-right: 10px; 
+  gap: 20px;
+  padding-left: 220px;
+  padding-top: 20px;
+}
+
+.video-item {
+  text-align: center;
+  background-color: #1a1a1a; 
+  padding: 10px; 
+  border-radius: 10px; 
+}
+
+.video-player {
+  width: 100%;
+  border: 2px solid #fff; 
+}
+
+.video-description {
+  color: #fff; 
+  margin-top: 10px; 
+}

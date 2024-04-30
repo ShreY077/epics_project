@@ -4,8 +4,6 @@ const controller = require('../controller/controller');
 
 const router = express.Router();
 
-// router.route('/v1/login').post(passport.authenticate('local',
-// {successRedirect:'/test_suc',failureRedirect:'test_fal'}));
 
 router.route('/v1/login').post(controller.local,controller.login);
 
