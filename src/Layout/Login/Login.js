@@ -77,8 +77,7 @@
     {
       return (
         <>
-            {/* <Navbar /> */}
-            <div className='container_Login'>
+              <div className='container_Login'>
                 <div className='card_login'>
                 <input id="inp2" className='inp' placeholder={`Email :`}  onChange={(e)=>setEmail(e.target.value)} /><br/>
                 <input id="inp3" className='inp' placeholder={`Password :`}  onChange={(e)=>setPass(e.target.value)}/><br/>

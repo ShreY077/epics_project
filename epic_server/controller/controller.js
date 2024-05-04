@@ -54,8 +54,22 @@ const logout = (req, res)=> {
   }
 
 
+  const isUser = async(req,res)=>{
+    console.log(req.session)
+    console.log(req.session.isUser)
+    if(req.session.isUser) 
+    {
+        res.json({
+            isUser:true,
+            user:req.session.user
+        });
+        return;
+    }
+    res.send(false);
+  }
 
 
 
 
-module.exports = {register,login,logout,local}
+
+module.exports = {register,login,logout,local,isUser}

@@ -1,4 +1,4 @@
-import React,{useState,useContext} from 'react'
+import React,{useState,useContext,useEffect} from 'react'
 import './navbar.css'
 import { Link, useLocation,useNavigate } from 'react-router-dom';
 import logoSvg from '../../imgs/logo.png'
@@ -16,7 +16,19 @@ const { user, setUser } = useContext(UserContext);
 
 
 
-console.log(user)
+// useEffect(()=>{
+
+//     const temp = async()=>{
+//        const res = await axios.get('http://localhost:3300/v1/ref',{
+//         withCredentials:true,
+//       });
+//        console.log(res.data);
+//     setUser(res.data.user)
+//     }
+//     temp();
+
+// },[])
+
 
 const logout = async()=>{
   await axios.get('http://localhost:3300/v1/logout',{
