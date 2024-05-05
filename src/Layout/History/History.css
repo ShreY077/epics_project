@@ -1,0 +1,46 @@
+/* Styling for the card component */
+.cardHistory {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    /* margin: 20px auto; */
+    margin-left: 270px;
+    margin-top: 10px;
+    background-color: grey;
+    color: white;
+  }
+  
+  /* Styling for the input fields */
+  .fieldHistory {
+    margin-bottom: 15px;
+  }
+  
+  .fieldHistory label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  
+  /* Styling for the submit button (optional)
+  .btn-containerHistory {
+    text-align: center;
+  }
+  
+  .btnHistory {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnHistory:hover {
+    background-color: #0056b3;
+  }
+ */
+
+  
