@@ -1,98 +1,55 @@
 .contact_form {
-    margin-left:auto;
-    margin-right:auto;
-    width: 965px;
-    height: 450px;
-    padding:30px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box; 
-    overflow: hidden; 
+  margin: 0 auto;
+  width: 70%; /* Adjust the width as needed */
+  max-width: 600px; /* Limit the maximum width for larger screens */
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-.contact_textarea{
-	  background: rgba(0, 0, 0, 0.4); 
-    width: 894px;
-    height: 110px;
-    border: none;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box; 
-    display: block;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    color: #fff;
-    padding-left: 45px;
-    padding-right: 20px;
-    padding-top: 12px;
-    margin-bottom: 20px;
-    overflow: hidden;
+.contact_textarea, .nameinput, .emailinput {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  color: #333; /* Dark text color */
+  padding: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Include padding in the width */
 }
 
-.nameinput, .emailinput {
-    width: 894px;
-    height: 48px;
-    border: none;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box; 
-    display: block;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-    color: #fff;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
+.contact_form label {
+  font-size: 16px; /* Match the font size with input fields */
+  display: block;
+  margin-bottom: 8px; /* Add space between label and input */
+}
+
+.contact_textarea {
+  height: 120px; /* Adjust the height of the textarea */
 }
 
 input[type=submit] {
-    cursor: pointer;
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
 }
 
-input.nameinput {
-	  background: rgba(0, 0, 0, 0.4); 
-	  padding-left: 45px;
+input[type=submit]:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
-
-
-input.emailinput {
-	  background: rgba(0, 0, 0, 0.4);
-	  padding-left: 45px;
-}
-
-input.message {
-	  background: rgba(0, 0, 0, 0.4);
-	  padding-left: 45px;
-}
-
 
 ::-webkit-input-placeholder {
-	  color: #fff;
+  color: #666; /* Light gray placeholder text */
 }
 
-.btn {
-	border: none;
-	font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  width: 200px;
-  height: 48px;
-	color: #000;
-	background: #fff;
-	cursor: pointer;
-	display: inline-block;
-	font-weight: 700;
-	position: relative;
-  outline: none;
-  box-shadow: 0 6px #cecece;
-  border-radius: 5px;
-  margin-right: 6px;
-} 

@@ -17,7 +17,7 @@ function about() {
             <br/>
             <li><Link to="#">Members </Link></li>
             <br/>
-            <li><Link to="#" >Connect with us </Link></li>
+            <li><Link to="/Contacts" >Connect with us </Link></li>
         </ul>
     </div>
 <div className="about animate-box">
@@ -40,8 +40,6 @@ function about() {
             <p>Our Website is highly Secure and Trusted and is managed by Aayush</p>
 
             <p>I hope you got to know about our website</p>
-
-            <p>Savdhan Rahe Satark Rahe</p>
             </div>
         </div>
     </>
