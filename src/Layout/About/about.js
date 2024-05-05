@@ -13,15 +13,14 @@ function about() {
 
         <ul className='about_ul'>
             <br/>
-            <li><Link to="#">History </Link></li>
             <br/>
-            <li><Link to="#">Members </Link></li>
+            <li><Link to="/Members">Members </Link></li>
             <br/>
-            <li><Link to="/Contacts" >Connect with us </Link></li>
+            <li><Link to="/contact" >Connect with us </Link></li>
         </ul>
     </div>
 <div className="about animate-box">
-    <h2 className='about_h2'>History</h2>
+    <h2 className='about_h2'>MEMBERS</h2>
     <div className="row">
             <p>Founder of this webpage shri Abu Sheikh .</p>
 
