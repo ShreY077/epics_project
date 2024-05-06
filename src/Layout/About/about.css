@@ -9,7 +9,7 @@
     display: list-item;
     margin-top: 30%;
     margin-bottom: 10px;
-    height: 80vh;
+    height: 76vh;
     margin-top: 20vh;
     border-radius: 20px;
     margin: 10px; 
@@ -63,7 +63,7 @@
 
    p {
     color: #f9caca; 
-    padding-top: 45px;
+    padding-top: 40px;
     font-size: 15px; 
     font-weight: 70;
     text-align: center;
