@@ -14,31 +14,32 @@ function about() {
         <ul className='about_ul'>
             <br/>
             <br/>
-            <li><Link to="/Members">Members </Link></li>
+            <li><Link to="/Member">Members</Link></li>
             <br/>
             <li><Link to="/contact" >Connect with us </Link></li>
         </ul>
     </div>
 <div className="about animate-box">
-    <h2 className='about_h2'>MEMBERS</h2>
+    <h1 className='title_h1'>MOVE MENTOR</h1>
+    <h2 className='about_h2'>About Us</h2>
     <div className="row">
-            <p>Founder of this webpage shri Abu Sheikh .</p>
+            <p>hand recognition website that serves as a bridge between sign language.</p>
 
-            <p>Introduced this site so that he can manipulate your data while keeping in the database and may use in future if found with highly authorized data </p>
+            <p>With cutting-edge technology, this platform empowers individuals who use sign language to effortlessly express themselves in digital spaces </p>
 
-            <p>Site is highly trusted and its not encrypted to users</p>
+            <p>Through a simple webcam interface, users can convey their messages using sign language</p>
 
             <div className="row">
                 <div>
-                    <p>His Son Shri Yasheer Sheikh is not identified and authorized for the liabilites</p>
-                    <p>Key features of this site is intake of users wallpaper and keeping it safe on the website </p>
+                    <p> and the website swiftly interprets their gestures with precision.</p>
+                    <p>Instantaneously, the interpreted signs are transformed into clear, concise text, ensuring seamless communication for both deaf and hearing individuals,</p>
                 </div>
             </div>
 
 
-            <p>Our Website is highly Secure and Trusted and is managed by Aayush</p>
+            <p>breaking down barriers and fostering understanding across diverse communities.</p>
 
-            <p>I hope you got to know about our website</p>
+            <p>I hope you like our website.</p>
             </div>
         </div>
     </>

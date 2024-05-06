@@ -1,4 +1,3 @@
-
 .container_Login {
     position: relative;
     top: 0;
@@ -10,21 +9,22 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.card_login{  
+.card_login {
     background: hsla(280, 84%, 41%, 1);
-    background: -moz-linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);  
+    background: -moz-linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);
     opacity: 0.7;
-    width: 700px;
-    height: auto;
+    width: 600px; /* Adjusted card width */
+    height: 480px; /* Adjusted card height */
     position: absolute;
-    top: 56%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
     text-align: center;
+    color: antiquewhite;
 }
 
-.inp{
+.inp {
     margin-top: 20px;
     background-color: inherit;
     border: none;
@@ -38,15 +38,16 @@
     font-size: 40px;
 }
 
-input::placeholder {
+.inp:focus {
+    border-bottom-color: rgb(30, 255, 0);
+    color: rgb(255, 255, 255);
     font-size: 40px;
 }
 
-.inp:focus{
-  border-bottom-color: rgb(30, 255, 0);
-  color: rgb(255, 255, 255);
-  font-size: 40px;
+.inp::placeholder {
+    color: #C4E4FF; /* Change to your desired color */
 }
+
 .btn_login {
     background-color: hsla(280, 84%, 41%, 1);
     border: none;
@@ -62,21 +63,21 @@ input::placeholder {
     transition: transform 0.3s ease;
 }
 
-.btn_login:hover{
+.btn_login:hover {
     background-color: hsla(218, 97%, 56%, 1);
     transform: scale(1.1);
-    color:black
+    color: black;
 }
 
-.login_icons{
+.login_icons {
     font-size: 50px;
     padding-top: 20px;
     margin-bottom: 20px;
 }
 
-.lr{
-    width: 700px;
-    height: 600px;
+.lr {
+    width: 600px; /* Adjusted card width */
+    height: 580px; /* Adjusted card height */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,7 +85,7 @@ input::placeholder {
     text-align: center;
 }
 
-.btn_login{
+.btn_login {
     margin: 30px;
-    margin-top: 90px    ;
+    margin-top: 90px;
 }
