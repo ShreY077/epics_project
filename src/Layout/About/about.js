@@ -14,7 +14,7 @@ function about() {
         <ul className='about_ul'>
             <br/>
             <br/>
-            <li><Link to="/Member">Members</Link></li>
+            <li><Link to="/member">Members</Link></li>
             <br/>
             <li><Link to="/contact" >Connect with us </Link></li>
         </ul>
