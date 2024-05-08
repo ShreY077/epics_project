@@ -8,7 +8,9 @@ import About from './Layout/About/about'
 import Contact from './Layout/Contacts/contact'
 import Navbar from './Layout/NavBar/Navbar'
 import { UserProvider } from './asset/User'
-import Sign_video from './Layout/serv/serv_video/serv_video'
+import SignVideo from './Layout/serv/serv_video/serv_video'
+import History from "../src/Layout/History/History"
+
 function App() {
   return (
   <UserProvider>
@@ -20,7 +22,8 @@ function App() {
         <Route path='/login' element ={<Login/>} />
         <Route path='/about' element ={<About/>} />
         <Route path='/contact' element ={<Contact/>} />
-        <Route path='/sign_video' element={<Sign_video/>} />
+        <Route path='/sign_video' element={<SignVideo/>} />
+        <Route path = "/History" element={<History/>} />
       </Routes>
     </Router>
    </UserProvider>

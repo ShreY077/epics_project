@@ -1,7 +1,7 @@
 import React from 'react'
 import './serv.css'
 import { FaHome, FaInfoCircle, FaCog } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function Serv() {
 return (
@@ -14,11 +14,7 @@ return (
         </a>
       </li>
       <li><Link to='/sign_video' > <FaInfoCircle /> SignVideos </Link></li>
-      <li>
-        <a href="/settings">
-          <FaCog /> History
-        </a>
-      </li>
+      <li><Link to='/History' > <FaInfoCircle /> History </Link></li>
     </ul>
   </div>
 );

@@ -59,9 +59,17 @@ for(const finger of Finger.all) {
   dontGesture.addDirection(finger, FingerDirection.HorizontalLeft, 1.0)
 }
 
+const indexPointGesture = new GestureDescription('indexPoint');
+
+// Set finger curls
+indexPointGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl, 1.0); // Thumb slightly bent
+indexPointGesture.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0); // Index finger straight
+for (let finger of [Finger.Middle, Finger.Ring, Finger.Pinky]) {
+  indexPointGesture.addCurl(finger, FingerCurl.FullCurl, 1.0); // Other fingers curled
+}
 
 const gestures = [
-  rockGesture, paperGesture, scissorsGesture, dontGesture
+  rockGesture, paperGesture, scissorsGesture, dontGesture,indexPointGesture
 ]
 
 export {

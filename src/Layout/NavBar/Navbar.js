@@ -1,7 +1,7 @@
 import React,{useState,useContext,useEffect} from 'react'
 import './navbar.css'
 import { Link, useLocation,useNavigate } from 'react-router-dom';
-import logoSvg from '../../imgs/logo.png'
+import logoSvg from '../../imgs/logo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse,faPhone,faAddressCard,faUser, } from '@fortawesome/free-solid-svg-icons'
 import {faUsps} from '@fortawesome/free-brands-svg-icons'

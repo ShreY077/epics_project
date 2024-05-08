@@ -18,7 +18,8 @@ const gestureStrings = {
   'rock': 'folded',
   'paper': 'Hii',
   'scissors': 'scissors',
-  'dont': 'dont'
+  'dont': 'dont',
+  'indexPointGesture':'Index Pointing'
 }
 
 const base = ['Horizontal ', 'Diagonal Up ']

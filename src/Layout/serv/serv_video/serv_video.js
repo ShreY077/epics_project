@@ -2,12 +2,14 @@ import React from 'react';
 import { FaHome, FaInfoCircle, FaCog } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './serv_video.css';
-import test from '../../../imgs/temp.mp4'
+import test from '../../../imgs/thumbsUp.mp4'
+import thumbsUp from '../../../imgs/videoplayback.webm'
+
 
 
 const videoData = [
   { id: 1, source: test, description: 'react-router-domreact-router-dom' },
-  { id: 2, source: test, description: 'react-router-domreact-router-dom' },
+  { id: 2, source: thumbsUp, description: 'Thumbs Up Gesture' },
   { id: 3, source: test, description: 'react-router-domreact-router-dom' },
   { id: 4, source: test, description: 'react-router-domreact-router-dom' },
   { id: 5, source: test, description: 'react-router-domreact-router-dom' },
@@ -15,7 +17,7 @@ const videoData = [
   { id: 7, source: test, description: 'react-router-domreact-router-dom' },
   { id: 8, source: test, description: 'react-router-domreact-router-dom' },
   { id: 9, source: test, description: 'react-router-domreact-router-dom' },
-  { id: 10, source: test, description: 'react-router-domreact-router-dom' },
+  { id: 10, source: test, description: 'react-router-domreact-router-dom'  },
 ];
 
 function ServVideo() {
@@ -24,15 +26,19 @@ function ServVideo() {
       <div className="sidenav">
         <div className="sidenav-logo">Services</div>
         <ul className="sidenav-links">
+          {/* <li>
+            <Link to="/serv"><FaHome /> ML Model</Link>
+          </li> */}
           <li>
-            <Link to="/"><FaHome /> Home</Link>
-          </li>
+        <a href="http://127.0.0.1:5500/web/indexx.html">
+          <FaHome /> Ml model
+        </a>
+      </li>
           <li>
             <Link to="/sign_video"><FaInfoCircle /> SignVideos</Link>
           </li>
-          <li>
-            <Link to="/history"><FaCog /> History</Link>
-          </li>
+          <li><Link to='/History' > <FaInfoCircle /> History </Link></li>
+
         </ul>
       </div>
       <div className="video-grid">
