@@ -1,20 +1,20 @@
 .container_Login {
     position: relative;
     top: 0;
-    background-image: url('../../imgs/login.jpg');
-    background-size: cover;
+    background-image: url('../../imgs/login.jpeg');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100vw;
     height: calc(100vh - 100px);
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black; /* Set background color to black */
 }
 
 .card_login {
-    background: hsla(280, 84%, 41%, 1);
-    background: -moz-linear-gradient(90deg, hsla(280, 84%, 41%, 1) 0%, hsla(218, 97%, 56%, 1) 100%);
+    background: black; /* Set background color to black */
     opacity: 0.7;
-    width: 600px; /* Adjusted card width */
-    height: 480px; /* Adjusted card height */
+    width: 600px;
+    height: 480px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,17 +29,16 @@
     background-color: inherit;
     border: none;
     border-bottom: 1px solid;
-    border-bottom-color: rgb(143, 43, 150);
+    border-bottom-color: #DCF2F1;
     outline: none;
     margin-bottom: 30px;
-    color: rgb(3, 251, 181);
-    width: 400px;
+    color: #FFD1E3;
     height: 50px;
     font-size: 40px;
 }
 
 .inp:focus {
-    border-bottom-color: rgb(30, 255, 0);
+    border-bottom-color:#98E4FF;
     color: rgb(255, 255, 255);
     font-size: 40px;
 }
@@ -49,7 +48,7 @@
 }
 
 .btn_login {
-    background-color: hsla(280, 84%, 41%, 1);
+    background-color: black; /* Set button background color to black */
     border: none;
     color: white;
     padding: 10px 20px;
@@ -64,20 +63,20 @@
 }
 
 .btn_login:hover {
-    background-color: hsla(218, 97%, 56%, 1);
+    background-color: #222; /* Darker shade of black for hover effect */
     transform: scale(1.1);
-    color: black;
+    color: white; /* Change text color on hover */
 }
 
 .login_icons {
-    font-size: 50px;
-    padding-top: 20px;
+    font-size: 40px;
+    padding-top: 5px;
     margin-bottom: 20px;
 }
 
 .lr {
-    width: 600px; /* Adjusted card width */
-    height: 580px; /* Adjusted card height */
+    width: 600px;
+    height: 580px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -88,4 +87,5 @@
 .btn_login {
     margin: 30px;
     margin-top: 90px;
+    padding-bottom: 10px;
 }
