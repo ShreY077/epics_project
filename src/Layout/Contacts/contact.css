@@ -1,35 +1,39 @@
 .contact_form {
-  margin: 0 auto;
-  width: 70%; /* Adjust the width as needed */
-  max-width: 600px; /* Limit the maximum width for larger screens */
+  margin: 20px auto; /* Add top margin to create space */
+  width: 70%;
+  max-width: 600px;
   padding: 30px;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding-top: 50px;
 }
 
-.contact_textarea, .nameinput, .emailinput {
+
+.contact_textarea,
+.nameinput,
+.emailinput {
   width: 100%;
   height: 50px;
   border: none;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.1);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
-  color: #333; /* Dark text color */
+  color: #333;
   padding: 12px;
   margin-bottom: 20px;
-  box-sizing: border-box; /* Include padding in the width */
+  box-sizing: border-box;
 }
 
 .contact_form label {
-  font-size: 16px; /* Match the font size with input fields */
+  font-size: 16px;
   display: block;
-  margin-bottom: 8px; /* Add space between label and input */
+  margin-bottom: 8px;
 }
 
 .contact_textarea {
-  height: 120px; /* Adjust the height of the textarea */
+  height: 120px;
 }
 
 input[type=submit] {
@@ -37,19 +41,18 @@ input[type=submit] {
   height: 48px;
   border: none;
   border-radius: 8px;
-  background-color: #007bff; /* Blue background color */
-  color: #fff; /* White text color */
+  background-color: #007bff;
+  color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease;
 }
 
 input[type=submit]:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
 }
 
 ::-webkit-input-placeholder {
-  color: #666; /* Light gray placeholder text */
+  color: #666;
 }
-
