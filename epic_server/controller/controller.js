@@ -1,6 +1,20 @@
 const hashSaltGen = require('../library/passport/hashSaltGen').hashSaltGen
 const User = require('../library/model/user');
 const passport = require('passport');
+const Hist = require("../library/model/history");
+
+
+const history  = async(req,res)=>{
+  console.log("used history route");
+  const gest = req.body
+  if(req.session.passport)
+    {
+      let newHist = { gesture : gest.gesture, hand : gest.hand, id :req.session.passport.user }
+      await Hist.create(newHist);
+    }
+  res.status(200).send("done");
+
+}
 
 
 const register = async(req,res)=>{
@@ -69,7 +83,23 @@ const logout = (req, res)=> {
   }
 
 
+  const historyFetch = async(req,res)=>{
+    console.log("used history fetch route")
+    if(req.session.passport)
+      {
+        
+        const histories = await Hist.find({id:req.session.passport.user})
+        // console.log(data)
+        res.status(200).json(histories)
+        return
+      }
+    res.status(200).json({msg:"please login"})
+    
+  }
 
 
 
-module.exports = {register,login,logout,local,isUser}
+
+
+
+module.exports = {register,login,logout,local,isUser,history,historyFetch}

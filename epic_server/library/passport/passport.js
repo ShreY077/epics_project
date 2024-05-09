@@ -6,7 +6,7 @@ const User = require('../model/user');
 
 const verifyedCallBack = async(username,password,done)=>{
   try{
-      const user = await User.findOne({userName:username});
+      const user = await User.findOne({emailId:username});
       if (!user) return done(null, false);
       if (!verifyPassword(password,user.salt,user.hash)) return done(null, false);
       console.log("login success");

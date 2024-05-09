@@ -12,14 +12,14 @@ const local = require('./library/passport/passport');
 const app = express();
 const PORT = process.env.PORT || 3300;
 const URI = process.env.URI;
-
+const allowedOrigins = ['http://localhost:3000', 'http://localhost:3400'];
 //DB connection
 connect(URI)
 
 //cross origin access
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: allowedOrigins,
     credentials: true
   }));
 

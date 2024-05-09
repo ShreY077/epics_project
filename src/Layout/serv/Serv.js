@@ -11,7 +11,7 @@ function Serv() {
         <div className="service-section">
           <h2 className="section-title">CONSULTATION</h2>
           <div className="service-box">
-            <a href="http://127.0.0.1:5500/web/indexx.html" className="service-link">
+            <a href="http://localhost:3400/web/indexx.html" className="service-link">
               <FaHome className="service-icon" />
               <span className="service-title">ML Model</span>
             </a>

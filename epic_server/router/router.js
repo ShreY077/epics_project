@@ -15,6 +15,10 @@ router.route('/v1/isUser').get(controller.isUser)
 
 router.route('/v1/logout').get(controller.logout);
 
+router.route('/v1/history').post(controller.history).get(controller.historyFetch)
+
+
+
 router.route('/v1/ref').get((req,res)=>{
     if(req.session.isUser) 
     {

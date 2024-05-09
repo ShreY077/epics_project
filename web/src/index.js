@@ -99,9 +99,6 @@ async function main() {
 
       const keypoints3D = hand.keypoints3D.map(keypoint => [keypoint.x, keypoint.y, keypoint.z])
       const predictions = GE.estimate(keypoints3D, 9)
-      // if(!predictions.gestures.length) {
-      //   updateDebugInfo(predictions.poseData, 'left')
-      // }
 
       if (predictions.gestures.length > 0) {
 
@@ -121,7 +118,12 @@ async function main() {
           prev = result.name
           hand1 = chosenHand
           try{
-            await axios.post("http://localhost:3300/history",data);  
+            await axios.post('http://localhost:3300/v1/history', data, {
+              headers: {
+            'Content-Type': 'application/json',},
+            withCredentials: true,
+          })
+
           }catch(err)
           {
             console.log("error in post req of gesture")
@@ -140,7 +142,7 @@ async function main() {
       }
 
     }
-    // ...and so on
+  
     setTimeout(() => { estimateHands() }, 1000 / config.video.fps)
   }
 
@@ -179,14 +181,6 @@ function drawPoint(ctx, x, y, r, color) {
   ctx.fillStyle = color
   ctx.fill()
 }
-
-// function updateDebugInfo(data, hand) {
-//   const summaryTable = `#summary-${hand}`
-//   for (let fingerIdx in data) {
-//     document.querySelector(`${summaryTable} span#curl-${fingerIdx}`).innerHTML = data[fingerIdx][1]
-//     document.querySelector(`${summaryTable} span#dir-${fingerIdx}`).innerHTML = data[fingerIdx][2]
-//   }
-// }
 
 window.addEventListener("DOMContentLoaded", () => {
 

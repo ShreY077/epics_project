@@ -12,6 +12,7 @@ import Members from './Layout/Members/member'; // Corrected import path
 import Navbar from './Layout/NavBar/Navbar';
 import { UserProvider } from './asset/User';
 import SignVideo from './Layout/serv/serv_video/serv_video'; // Corrected component name
+import History from './Layout/History/History';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/sign_video' element={<SignVideo />} /> {/* Corrected component name */}
           <Route path='/member' element={<Members />} /> {/* Corrected import path */}
+          <Route path='/History' element={<History />} />
+
         </Routes>
       </Router>
     </UserProvider>

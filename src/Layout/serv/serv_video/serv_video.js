@@ -30,7 +30,7 @@ function ServVideo() {
             <Link to="/serv"><FaHome /> ML Model</Link>
           </li> */}
           <li>
-        <a href="http://127.0.0.1:5500/web/indexx.html">
+        <a href="http://localhost:3400/web/indexx.html">
           <FaHome /> Ml model
         </a>
       </li>

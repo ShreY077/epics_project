@@ -1,46 +1,69 @@
-/* Styling for the card component */
-.cardHistory {
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    /* margin: 20px auto; */
-    margin-left: 270px;
-    margin-top: 10px;
-    background-color: grey;
-    color: white;
-  }
-  
-  /* Styling for the input fields */
-  .fieldHistory {
-    margin-bottom: 15px;
-  }
-  
-  .fieldHistory label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  
-  /* Styling for the submit button (optional)
-  .btn-containerHistory {
-    text-align: center;
-  }
-  
-  .btnHistory {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btnHistory:hover {
-    background-color: #0056b3;
-  }
- */
+.history_container {
+  display: flex;
+  height: 100vh; 
+  background-color: #000; 
+}
+
+.sidenav {
+  position: absolute;
+  left: 0;
+  top: calc(100vh-80px);
+  width: 200px;
+  height: 100%; 
+  background-color: #000; 
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.sidenav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidenav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidenav-links li {
+  margin: 10px 0;
+}
+
+.sidenav-links a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.sidenav-links a:hover {
+  color: #f39c12; 
+}
+.history_data{
+  margin-left: 10px;
+  font-size: 30px;
+  color: aqua;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 20px; 
+  margin-right: 10px; 
+  gap: 20px;
+  padding-left: 220px;
+  padding-top: 20px;
+}
+
+.history-item {
+  width: 500px;
+  /* text-align: center; */
+  background-color: #1a1a1a; 
+  padding: 10px; 
+  border-radius: 10px; 
+}
 
   
