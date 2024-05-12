@@ -1,7 +1,5 @@
 **Gesture Recognition Website for Engineering Projects in Community Service**
 
-![Gesture Recognition Logo](https://example.com/gesture_recognition_logo.png)
-
 Welcome to the Gesture Recognition Website for Engineering Projects in Community Service (EPICS)! This project aims to provide a comprehensive platform for implementing gesture recognition technology in various community service projects. Whether it's assisting people with disabilities, enhancing education, or improving accessibility, EPICS empowers engineers to make a positive impact using cutting-edge technology.
 
 ## Table of Contents
